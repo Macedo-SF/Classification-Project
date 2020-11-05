@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Loan Project", "Loan Project.pyproj", "{8E669B6F-A67B-4AB9-BAA1-3BFB109FFA9A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E669B6F-A67B-4AB9-BAA1-3BFB109FFA9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E669B6F-A67B-4AB9-BAA1-3BFB109FFA9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0BDDE14D-500F-4880-879A-8146AD1518BB}
+	EndGlobalSection
+EndGlobal
