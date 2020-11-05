@@ -18,8 +18,8 @@ def myPrint(input):
 #load data ----------------------------------------------------------------------------------------------------
 
 #write output to txt
-sys.stdout=open('C:/Users/Saulo/source/repos/Classification Project/clean_output.txt','w')
-
+sys.stdout=open('C:/Users/Saulo/source/repos/Classification-Project/clean_output.txt','w') #unzip before
+                                                                                    #github wouldn't allow, too big
 data = pd.read_csv("SBAnational.csv")
 #size, indexes and data types
 myPrint('Initial Shape and Data Type')
@@ -182,7 +182,7 @@ myPrint(data.dtypes)
 #close output.txt
 sys.stdout.close()
 #export to new csv
-data.to_csv(r'C:\Users\Saulo\source\repos\Classification Project\clean_loan.csv',index=False)
+data.to_csv(r'C:\Users\Saulo\source\repos\Classification-Project\clean_loan.csv',index=False)
 #to do
     #use zip to fill city and state before dropping
     #remove all prints for unique values(like city and grant approval)

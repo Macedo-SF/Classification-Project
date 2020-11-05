@@ -5,7 +5,7 @@
     <ProjectGuid>8e669b6f-a67b-4ab9-baa1-3bfb109ffa9a</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>Tests.py</StartupFile>
+    <StartupFile>Clean.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
