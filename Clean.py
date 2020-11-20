@@ -18,9 +18,9 @@ def myPrint(input):
 #load data ----------------------------------------------------------------------------------------------------
 
 #write output to txt
-sys.stdout=open('C:/Users/Saulo/source/repos/Classification-Project/clean_output.txt','w') #unzip before
-                                                                                    #github wouldn't allow, too big
-data = pd.read_csv("SBAnational.csv")
+sys.stdout=open('C:/Users/Saulo/source/repos/Classification-Project/clean_output.txt','w')
+                                                                                    
+data = pd.read_csv("SBAnational.csv")#unzip before #github wouldn't allow, too big
 #size, indexes and data types
 myPrint('Initial Shape and Data Type')
 myPrint(data.shape)
@@ -166,6 +166,11 @@ myPrint(Counter(data.MIS_Status).keys())
 
 data.GrAppv = data.GrAppv.replace('[\$,]', '', regex=True).astype(float)
 myPrint('GrAppv Status')
+myPrint(data.GrAppv.describe())
+#myPrint(Counter(data.GrAppv).values())
+#myPrint(Counter(data.GrAppv).keys())
+#log
+data.GrAppv=np.log(data.GrAppv)
 myPrint(data.GrAppv.describe())
 #myPrint(Counter(data.GrAppv).values())
 #myPrint(Counter(data.GrAppv).keys())
