@@ -5,7 +5,7 @@
     <ProjectGuid>8e669b6f-a67b-4ab9-baa1-3bfb109ffa9a</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>Classification.py</StartupFile>
+    <StartupFile>Classification Tests.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -23,6 +23,12 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Classification Tests.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classification_PCA.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Clean.py" />
     <Compile Include="Classification.py">
       <SubType>Code</SubType>
@@ -50,7 +56,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="classification_output.txt" />
+    <Content Include="classification_pca_output.txt" />
+    <Content Include="classification_tests_output.txt" />
     <Content Include="clean_output.txt" />
+    <Content Include="encoding_output.txt" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
