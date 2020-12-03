@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import sys
 from collections import Counter
 from statsmodels.stats.diagnostic import normal_ad
 
@@ -11,6 +12,8 @@ def myPrint(input):
     print('--------------------------------------------------')
 
 #functions end ------------------------------------------------------------------------------------------
+
+sys.stdout=open('C:/Users/Saulo/source/repos/Classification-Project/encoding_output.txt','w')
 
 data = pd.read_csv("clean_loan.csv")
 #State
@@ -43,4 +46,5 @@ myPrint(data.NAICS.describe())
 myPrint(Counter(data.NAICS).values())
 myPrint(Counter(data.NAICS).keys())
 #
+sys.stdout.close()
 data.to_csv(r'C:\Users\Saulo\source\repos\Classification-Project\encoded_loan.csv',index=False)
